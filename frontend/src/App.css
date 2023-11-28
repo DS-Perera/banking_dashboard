@@ -4,3 +4,6 @@
   --navbar-bg-color: black;
   --navbar-link-color: white;
 }
+*{
+  font-family: 'Open Sans', sans-serif;
+}
