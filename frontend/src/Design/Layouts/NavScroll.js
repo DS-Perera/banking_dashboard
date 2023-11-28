@@ -10,15 +10,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavScroll() {
   return (
-    <Navbar
-      expand="lg"
-      className="bg-body-tertiary"
-      style={{ background: "var(--navbar-bg-color)" }}
-      data-bs-theme="dark"
-    >
+    <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
       <Container fluid>
-        <Navbar.Brand href="#" style={{ color: "var(--navbar-link-color)" }}>
-          Navbar scroll
+        <Navbar.Brand href="#">
+          <span className="fw-bold">ABC</span> | Banking
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -27,49 +22,31 @@ function NavScroll() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link
-              href="#action1"
-              style={{ color: "var(--navbar-link-color)" }}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href="#action2"
-              style={{ color: "var(--navbar-link-color)" }}
-            >
-              Link
-            </Nav.Link>
-            <NavDropdown
-              title="Link"
-              id="navbarScrollingDropdown"
-              style={{ color: "var(--navbar-link-color)" }}
-            >
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link
-              href="#"
-              disabled
-              style={{ color: "var(--navbar-link-color)" }}
-            >
-              Link
-            </Nav.Link>
+            {/* <Nav.Link href="#action1">ABC</Nav.Link> */}
+            {/* <Nav.Link href="#action2">Link</Nav.Link> */}
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <div className="d-flex">
+            <Nav.Link href="#action1" className="text-white righr_link">
+              <i class="fa fa-location-arrow" aria-hidden="true"></i> Branch
+              Location
+            </Nav.Link>
+            <Nav.Link href="#action1" className="text-white righr_link">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </Nav.Link>
+            <Nav.Link href="#action1" className="text-white righr_link">
+              <i class="fa fa-bell" aria-hidden="true"></i>
+            </Nav.Link>
+            <div>
+              <Nav.Link href="#action1" className="text-white righr_link">
+                <i class="fa fa-user-circle" aria-hidden="true"></i> Welcome
+                User
+              </Nav.Link>
+
+              {/* <Nav.Link href="#action1" className="text-white righr_link">
+                Logout
+              </Nav.Link> */}
+            </div>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
