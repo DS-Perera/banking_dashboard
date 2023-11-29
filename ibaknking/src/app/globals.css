@@ -1,0 +1,7 @@
+:root {
+  --main-color: #ffa001;
+}
+
+.orangeNavbar {
+  background: var(--main-color) !important;
+}

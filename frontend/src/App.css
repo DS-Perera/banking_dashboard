@@ -1,13 +1,101 @@
 /* styles.css */
 
 :root {
-  --navbar-bg-color: black;
-  --navbar-link-color: white;
+  --main-color: #ffa001;
+  --primary-color: #060000;
+  --secondary-color: #ffffff;
+  --ash-color: #6f6e6e;
+  --footerNavbarBack-color: #444444;
+  --pageContent-color: #f7f6f6;
 }
-*{
-  font-family: 'Open Sans', sans-serif;
+* {
+  font-family: "Open Sans", sans-serif;
+}
+.mainNavBar {
+  background-color: var(--main-color) !important;
+  color: var(--secondary-color);
+  padding: 10px;
+}
+.productName {
+  color: var(--primary-color) !important;
+  font-size: 23px;
+  font-weight: 400;
+}
+.CompanyName {
+  font-weight: 700;
+}
+.right-nav-items {
+  font-size: 20px;
+}
+.right-nav-items .Single-item {
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 23px;
+}
+.userIcon {
+  font-size: 35px;
+  color: var(--primary-color) !important;
+}
+.userName {
+  font-weight: 700;
+  padding-bottom: 0px;
+  padding-top: 2px;
+}
+.logoutbtn {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-size: 16px;
+  margin-top: -2px;
+  color: var(--ash-color);
+  font-weight: 600;
+}
+.userProfile {
+  border-left: 1px solid var(--ash-color);
+  padding-left: 20px;
 }
 
-.righr_link{
-  margin-left: 25px;
+.footer {
+  background-color: var(--main-color) !important;
+  color: var(--primary-color);
+  padding: 10px 0px;
+}
+.footer a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+}
+.copyrihtLine {
+  display: flex;
+  justify-content: end;
+}
+.footer p,
+.footerNavigator p {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.footerNavigator {
+  background-color: var(--footerNavbarBack-color) !important;
+  color: var(--primary-color);
+  padding: 30px 0px;
+}
+.footerNavigator a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footerNavigator p {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.footerNavigator ul a {
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+.footerNavigator ul {
+  list-style-type: none;
+}
+.pageBackground {
+  background: var(--pageContent-color);
 }
