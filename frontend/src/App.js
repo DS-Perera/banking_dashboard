@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Routes from "./Design/Routes";
+import RoutesPage from "./Design/RoutesPage";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
     //   </header>
     // </div>
     <div>
-      <Routes />
+      <RoutesPage />
     </div>
   );
 }

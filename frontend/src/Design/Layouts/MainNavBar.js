@@ -9,7 +9,7 @@ function MainNavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary mainNavBar">
       <Container>
-        <Navbar.Brand href="#" className="productName">
+        <Navbar.Brand href="/home" className="productName">
           <span className="CompanyName">ABC</span> | iBanking
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
