@@ -5,6 +5,7 @@
   --primary-color: #060000;
   --secondary-color: #ffffff;
   --ash-color: #6f6e6e;
+  --ash2-color: #ebebeb;
   --footerNavbarBack-color: #444444;
   --pageContent-color: #f7f6f6;
 }
@@ -99,7 +100,7 @@
 .pageBackground {
   background: var(--pageContent-color);
 }
-.dashboardContent{
+.dashboardContent {
   padding-right: 40px !important;
   /* background: red; */
 }
@@ -124,6 +125,15 @@
   background-color: var(--main-color) !important;
   outline: none;
   border: none;
+}
+.beta-btn,
+.beta-btn:hover {
+  background-color: var(--ash-color) !important;
+  outline: none;
+  border: none;
+}
+.primary-background {
+  background-color: var(--main-color) !important;
 }
 .alpha-btn:active {
   background-color: var(--ash-color) !important;
@@ -172,4 +182,35 @@
 }
 .scrollDownButton img {
   height: 3vw;
+}
+.font-weight-bold {
+  font-weight: 600;
+}
+.buttonSet a {
+  width: 30%;
+}
+.loginDetails img {
+  height: 30px;
+  padding: 4px;
+}
+.checkbox-custom-color:checked {
+  background-color: var(--main-color) !important;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.forgot-password {
+  color: var(--main-color);
+}
+
+.loginBackground {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--ash2-color) !important;
+}
+
+.login-heading{
+  color: var(--ash-color) ;
 }
